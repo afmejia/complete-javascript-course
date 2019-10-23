@@ -1,9 +1,9 @@
 var markMass, markHeight, johnMass, johnHeight, higherBMI;
 
 markMass = 95;
-markHeight = 176;
+markHeight = 1.76;
 johnMass = 85;
-markHeight = 176;
+markHeight = 1.76;
 
 markBMI = markMass / (markHeight * markHeight);
 johnBMI = johnMass / (johnHeight * johnHeight);
