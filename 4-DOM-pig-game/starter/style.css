@@ -2,6 +2,31 @@
 *** GENERAL
 **********************************************/
 
+.final-score {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 520px;
+  color: #555;
+  font-size: 18px;
+  font-family: "Lato";
+  text-align: center;
+  padding: 10px;
+  width: 160px;
+  text-transform: uppercase;
+}
+
+.final-score:focus {
+  outline: none;
+}
+
+#dice-1 {
+  top: 120px;
+}
+#dice-2 {
+  top: 250px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -123,26 +148,6 @@ button {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.input-score {
-  position: absolute;
-  width: 200px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #555;
-  background: none;
-  border: none;
-  font-family: Lato;
-  font-size: 20px;
-  text-transform: uppercase;
-  cursor: pointer;
-  font-weight: 300;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-input {
-  display: none;
-}
-
 button:hover {
   font-weight: 600;
 }
@@ -173,9 +178,6 @@ i {
 }
 .btn-hold {
   top: 467px;
-}
-.input-score {
-  top: 80px;
 }
 
 .dice {
