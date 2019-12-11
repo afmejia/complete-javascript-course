@@ -93,12 +93,26 @@
 
 // interviewQuestion("designer")("Mark");
 
-(function() {
-  var score = Math.random() * 10;
-  console.log(score >= 5);
-})();
+// (function() {
+//   var score = Math.random() * 10;
+//   console.log(score >= 5);
+// })();
 
-(function(goodLuck) {
-  var score = Math.random() * 10;
-  console.log(score >= 5 - goodLuck);
-})(5);
+// (function(goodLuck) {
+//   var score = Math.random() * 10;
+//   console.log(score >= 5 - goodLuck);
+// })(5);
+
+// Closures
+function retirement(retirementAge) {
+  var a = " years left until retirement.";
+  return function(yearOfBirth) {
+    var age = 2019 - yearOfBirth;
+    console.log(retirementAge - age + a);
+  };
+}
+
+var retirementCOL = retirement(62);
+retirementCOL(1993);
+
+retirement(62)(1993);
