@@ -104,15 +104,39 @@
 // })(5);
 
 // Closures
-function retirement(retirementAge) {
-  var a = " years left until retirement.";
-  return function(yearOfBirth) {
-    var age = 2019 - yearOfBirth;
-    console.log(retirementAge - age + a);
-  };
+// function retirement(retirementAge) {
+//   var a = " years left until retirement.";
+//   return function(yearOfBirth) {
+//     var age = 2019 - yearOfBirth;
+//     console.log(retirementAge - age + a);
+//   };
+// }
+
+// var retirementCOL = retirement(62);
+// retirementCOL(1993);
+
+// retirement(62)(1993);
+
+var years = [1990, 1965, 1937, 2005, 1998];
+
+function arrayCalc(arr, fn) {
+  var arrRes = [];
+  for (var i = 0; i < arr.length; i++) {
+    arrRes.push(fn(arr[i]));
+  }
+  return arrRes;
 }
 
-var retirementCOL = retirement(62);
-retirementCOL(1993);
+function calcaulateAge(el) {
+  return 2019 - el;
+}
 
-retirement(62)(1993);
+function isFullAge(limit, el) {
+  return el >= limit;
+}
+
+var ages = arrayCalc(years, calcaulateAge);
+var fullJapan = arrayCalc(ages, isFullAge.bind(this, 20));
+
+console.log(ages);
+console.log(fullJapan);
