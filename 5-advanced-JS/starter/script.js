@@ -111,11 +111,13 @@
 //     console.log(retirementAge - age + a);
 //   };
 // }
-
+//
 // var retirementCOL = retirement(62);
-// retirementCOL(1993);
-
-// retirement(62)(1993);
+// var retirementUS = retirement(66);
+//
+//
+//retirementCOL(1993);
+//retirementUS(1993);
 
 var years = [1990, 1965, 1937, 2005, 1998];
 

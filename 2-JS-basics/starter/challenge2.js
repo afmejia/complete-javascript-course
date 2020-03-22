@@ -1,4 +1,4 @@
-var avgJohn, avgMike, winner, highestScore;
+var avgJohn, avgMike, winner, highestScore, avgMary;
 
 // Calculate average score for each team
 avgJohn = (89 + 120 + 103) / 3;

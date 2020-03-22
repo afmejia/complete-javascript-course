@@ -1,4 +1,4 @@
-var markMass, markHeight, johnMass, johnHeight, higherBMI;
+var markMass, markHeight, johnMass, johnHeight, higherBMI, markBMI, johnBMI;
 
 markMass = 95;
 markHeight = 1.76;
